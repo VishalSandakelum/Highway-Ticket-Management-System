@@ -11,19 +11,19 @@ spring:
               - Path=/api/v0/user/**
 
           - id: vehicle-service
-            uri: lb://item-service
+            uri: lb://vehicle-service
             predicates:
               - Path=/api/v0/vehicle/**
 
           - id: ticket-service
-              uri: lb://ticket-service
-              predicates:
-                - Path=/api/v0/ticket/**
+            uri: lb://ticket-service
+            predicates:
+              - Path=/api/v0/ticket/**
 
           - id: payment-service
-              uri: lb://payment-service
-              predicates:
-                - Path=/api/v0/payment/**
+            uri: lb://payment-service
+            predicates:
+              - Path=/api/v0/payment/**
 
 server:
   port: 8084
