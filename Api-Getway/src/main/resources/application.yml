@@ -6,9 +6,9 @@ spring:
       mvc:
         routes:
           - id: user-service
-            uri: lb://customer-service
+            uri: lb://user-service
             predicates:
-              - Path=/api/v0/user/**
+              - Path=/api/v0/users/**
 
           - id: vehicle-service
             uri: lb://vehicle-service
