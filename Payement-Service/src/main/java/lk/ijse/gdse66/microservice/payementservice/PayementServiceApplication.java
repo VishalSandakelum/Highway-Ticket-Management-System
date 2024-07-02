@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.microservice.payementservice;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -21,4 +22,8 @@ public class PayementServiceApplication {
         return new RestTemplate();
     }
 
+    @Bean
+    public ModelMapper modelMapper(){
+        return new ModelMapper();
+    }
 }

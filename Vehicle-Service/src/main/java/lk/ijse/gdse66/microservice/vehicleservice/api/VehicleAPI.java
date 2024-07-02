@@ -58,7 +58,7 @@ public class VehicleAPI {
         vehicleService.deleteVehicle(number);
     }
 
-    @PatchMapping(value = "/{number}",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/{number}",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.ACCEPTED)
     VehicleDTO getVehicle(@PathVariable("number") String number){
         return vehicleService.getVehicleDetails(number);
