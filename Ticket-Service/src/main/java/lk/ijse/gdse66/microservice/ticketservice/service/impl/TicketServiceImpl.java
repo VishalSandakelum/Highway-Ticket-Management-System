@@ -54,6 +54,7 @@ public class TicketServiceImpl implements TicketService {
     }
 
     @Override
+    @Transactional
     public void updateTicket(String ticket_id, TicketDTO ticketDTO) {
         if(!ticketRepository.existsByTicketId(ticket_id)){
             throw new NotFoundException("Ticket"+ ticket_id + "Not Found...");

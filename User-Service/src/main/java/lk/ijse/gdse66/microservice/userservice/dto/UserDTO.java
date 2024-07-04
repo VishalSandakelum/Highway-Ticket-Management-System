@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.microservice.userservice.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lk.ijse.gdse66.microservice.userservice.util.Gender;
 import lombok.*;
 
@@ -19,6 +20,6 @@ public class UserDTO {
     private String userName;
     @NotBlank
     private String userAddress;
-    @NotBlank
+    @NotNull
     private Gender gender;
 }

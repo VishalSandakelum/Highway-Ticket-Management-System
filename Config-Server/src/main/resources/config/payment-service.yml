@@ -2,7 +2,7 @@ spring:
   application:
     name: payment-service
   datasource:
-    url: jdbc:mysql://localhost:3306/highway_ticket_managment?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/highway_ticket_payment_managment?createDatabaseIfNotExist=true
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver

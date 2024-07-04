@@ -47,6 +47,7 @@ public class UserAPI {
     @GetMapping(value = "/{nic}",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.ACCEPTED)
     UserDTO getUser(@PathVariable("nic") String nic){
+        System.out.println("dfg");
         return userService.getUserDetails(nic);
     }
 }
